@@ -20,9 +20,11 @@ To get this project up and running locally, you must already have npm and nodejs
 - $ git clone `$ git clone https://github.com/jebitok-dev/calculator`
 - $ git checkout develop
 - Run `cd calculator`
+- ``$ npm install`` or ``$ yarn install``
+- ``$ npm start``
 ```
 
-<!-- - [Live Version](https://todo-list-vjs.netlify.app/) -->
+- [Live Version](https://todo-list-vjs.netlify.app/)
 
 ### Run Tests
 <!-- Tests for modules written using **Jest**
