@@ -24,7 +24,7 @@ To get this project up and running locally, you must already have npm and nodejs
 - ``$ npm start``
 ```
 
-- [Live Version](https://todo-list-vjs.netlify.app/)
+- [Live Version](https://calculator-math-magicians.netlify.app/)
 
 ### Run Tests
 <!-- Tests for modules written using **Jest**
