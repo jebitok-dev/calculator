@@ -1,9 +1,17 @@
 import PropTypes from 'prop-types';
 
-function Button({ name }) {
+function Display({ answer }) {
   return (
-    <button type="button">{name}</button>
+    <div>
+      <h1>{answer}</h1>
+    </div>
   );
 }
 
-Button.propTypes = { name: PropTypes.string.isRequired };
+Display.defaultProps = {
+  answer: '0',
+};
+
+Display.propTypes = { answer: PropTypes.string };
+
+export default Display;
