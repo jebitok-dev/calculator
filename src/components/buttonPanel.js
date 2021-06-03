@@ -8,10 +8,10 @@ export default class ButtonPanel extends React.Component {
       return (
         <div>
           <div className="calculator-row">
-            {this.renderButton('(')}
-            {this.renderButton(')')}
-            {this.renderButton('%')}
             {this.renderButton('AC')}
+            {this.renderButton('+/-')}
+            {this.renderButton('%')}
+            {this.renderButton('/')}
           </div>
           <div className="calculator-row">
             {this.renderButton('7')}
@@ -23,19 +23,18 @@ export default class ButtonPanel extends React.Component {
             {this.renderButton('4')}
             {this.renderButton('5')}
             {this.renderButton('6')}
-            {this.renderButton('X')}
+            {this.renderButton('-')}
           </div>
           <div className="calculator-row">
             {this.renderButton('1')}
             {this.renderButton('2')}
             {this.renderButton('3')}
-            {this.renderButton('-')}
+            {this.renderButton('+')}
           </div>
           <div className="calculator-row">
             {this.renderButton('0')}
             {this.renderButton('.')}
             {this.renderButton('=')}
-            {this.renderButton('+')}
           </div>
         </div>
       );
