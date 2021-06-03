@@ -5,7 +5,8 @@ Building a calculator to ease calculations for Math-Magicians a fictional compan
 
 ## Built With
 
-- Reacts
+- React
+- Big.js
 - Jest for testing
 
 ## Getting Started
