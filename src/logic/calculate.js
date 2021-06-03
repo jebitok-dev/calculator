@@ -7,7 +7,11 @@ function calculate(calculatorDataObj, buttonName) {
     next = '';
     operation = '';
   } else if (buttonName === '+/-') {
-    total = next * total * -1;
+    return {
+      ...calculatorDataObj,
+      total: total * -1,
+      next: next * -1,
+    };
   } else if (buttonName === '+'
         || buttonName === '-'
         || buttonName === '/'

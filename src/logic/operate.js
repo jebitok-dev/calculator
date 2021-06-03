@@ -18,7 +18,7 @@ function operate(numberOne, numberTwo, operator) {
       ans = x / y;
       break;
     case '%':
-      ans = (x % y) / 100;
+      ans = (x) / 100;
       break;
     default:
       ans = 0;
