@@ -17,7 +17,7 @@ export default class ButtonPanel extends React.Component {
             {this.renderButton('7')}
             {this.renderButton('8')}
             {this.renderButton('9')}
-            {this.renderButton('÷')}
+            {this.renderButton('x')}
           </div>
           <div className="calculator-row">
             {this.renderButton('4')}
