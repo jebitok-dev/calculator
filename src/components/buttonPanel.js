@@ -1,42 +1,46 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './buttons';
 
-export default class ButtonPanel extends React.Component {
-    renderButton = (i) => <Button name={i} />
-
-    render() {
-      return (
-        <div>
-          <div className="calculator-row">
-            {this.renderButton('AC')}
-            {this.renderButton('+/-')}
-            {this.renderButton('%')}
-            {this.renderButton('/')}
-          </div>
-          <div className="calculator-row">
-            {this.renderButton('7')}
-            {this.renderButton('8')}
-            {this.renderButton('9')}
-            {this.renderButton('x')}
-          </div>
-          <div className="calculator-row">
-            {this.renderButton('4')}
-            {this.renderButton('5')}
-            {this.renderButton('6')}
-            {this.renderButton('-')}
-          </div>
-          <div className="calculator-row">
-            {this.renderButton('1')}
-            {this.renderButton('2')}
-            {this.renderButton('3')}
-            {this.renderButton('+')}
-          </div>
-          <div className="calculator-row">
-            {this.renderButton('0')}
-            {this.renderButton('.')}
-            {this.renderButton('=')}
-          </div>
-        </div>
-      );
-    }
+function ButtonPanel({ clickHandler }) {
+  const renderButton = (i) => <Button name={i} handleClick={clickHandler} />;
+  return (
+    <div>
+      <div className="calculator-row">
+        {renderButton('AC')}
+        {renderButton('+/-')}
+        {renderButton('%')}
+        {renderButton('/')}
+      </div>
+      <div className="calculator-row">
+        {renderButton('7')}
+        {renderButton('8')}
+        {renderButton('9')}
+        {renderButton('x')}
+      </div>
+      <div className="calculator-row">
+        {renderButton('4')}
+        {renderButton('5')}
+        {renderButton('6')}
+        {renderButton('-')}
+      </div>
+      <div className="calculator-row">
+        {renderButton('1')}
+        {renderButton('2')}
+        {renderButton('3')}
+        {renderButton('+')}
+      </div>
+      <div className="calculator-row">
+        {renderButton('0')}
+        {renderButton('.')}
+        {renderButton('=')}
+      </div>
+    </div>
+  );
 }
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
+
+export default ButtonPanel;
