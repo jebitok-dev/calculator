@@ -12,7 +12,7 @@ function operate(numberOne, numberTwo, operator) {
     case '-':
       ans = x - y;
       break;
-    case '*':
+    case 'x':
       ans = x * y;
       break;
     case '/':

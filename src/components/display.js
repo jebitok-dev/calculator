@@ -5,8 +5,8 @@ function Display({ total, next, operation }) {
     <div>
       <h1>
         {total || '0'}
-        {next}
         {operation || ''}
+        {next}
       </h1>
     </div>
   );

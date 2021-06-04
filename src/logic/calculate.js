@@ -15,14 +15,14 @@ function calculate(calculatorDataObj, buttonName) {
   } else if (buttonName === '+'
         || buttonName === '-'
         || buttonName === '/'
-        || buttonName === '*'
+        || buttonName === 'x'
         || buttonName === '%'
   ) {
     operation = !next ? buttonName : null;
   } else if (buttonName === '=') {
     total = operate(total, next, operation);
     next = '';
-    operate = null;
+    operation = null;
   } else if (!operation) {
     total += buttonName;
   } else {
