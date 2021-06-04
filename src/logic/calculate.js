@@ -20,7 +20,13 @@ function calculate(calculatorDataObj, buttonName) {
   ) {
     operation = !next ? buttonName : null;
   } else if (buttonName === '=') {
-    operate(total, next, operation);
+    total = operate(total, next, operation);
+    next = '';
+    operate = null;
+  } else if (!operation) {
+    total += buttonName;
+  } else {
+    next += buttonName;
   }
   return { total, next, operation };
 }
