@@ -1,17 +1,21 @@
 import PropTypes from 'prop-types';
 
-function Display({ answer }) {
+function Display({ total, next, operation }) {
   return (
     <div>
-      <h1>{answer}</h1>
+      <h1>
+        {total || '0'}
+        {next}
+        {operation || ''}
+      </h1>
     </div>
   );
 }
 
-Display.defaultProps = {
-  answer: '0',
+Display.propTypes = {
+  total: PropTypes.string.isRequired,
+  next: PropTypes.string.isRequired,
+  operation: PropTypes.string.isRequired,
 };
-
-Display.propTypes = { answer: PropTypes.string };
 
 export default Display;
