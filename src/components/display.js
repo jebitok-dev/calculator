@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
 const Display = ({ total, next, operation }) => (
-  <div>
-    <h1>
+  <div className="is-display" data-testid="display">
+    <h2 className="display-heading">
       {total || '0'}
       {operation || ''}
       {next}
-    </h1>
+    </h2>
   </div>
 );
 
