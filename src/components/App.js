@@ -17,10 +17,10 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="is-flex calculator">
       <Display next={next} total={total} operation={operation} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </div>
   );
 };
 
