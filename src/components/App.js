@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Display from './display';
 import ButtonPanel from './buttonPanel';
 import calculate from '../logic/calculate';
+import '../styles/styles.css';
 
 const App = () => {
   const [total, setTotal] = useState('');
