@@ -3,6 +3,7 @@ import Home from './homepage';
 import Calculator from './calculator';
 import Navbar from './navbar';
 import Quote from './quote';
+import Error from './error';
 
 const Router = () => (
   <BrowserRouter>
@@ -11,6 +12,7 @@ const Router = () => (
       <Route path="/" component={Home} exact />
       <Route path="/calculator" component={Calculator} />
       <Route path="/quote" component={Quote} />
+      <Route component={Error} />
     </Switch>
   </BrowserRouter>
 );
