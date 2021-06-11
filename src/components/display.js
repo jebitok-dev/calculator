@@ -10,10 +10,12 @@ const Display = ({ total, next, operation }) => (
   </div>
 );
 
+/* eslint-disable */
 Display.propTypes = {
-  total: PropTypes.string.isRequired,
-  next: PropTypes.string.isRequired,
-  operation: PropTypes.string.isRequired,
+  total: PropTypes.string,
+  next: PropTypes.string,
+  operation: PropTypes.string,
 };
+/* eslint-enable */
 
 export default Display;
