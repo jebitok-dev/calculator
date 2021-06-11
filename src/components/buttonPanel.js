@@ -5,7 +5,7 @@ import Button from './buttons';
 const ButtonPanel = ({ clickHandler }) => {
   const renderButton = (i) => <Button name={i} handleClick={clickHandler} />;
   return (
-    <div>
+    <div data-testid="button-panel">
       <div className="calculator-row">
         {renderButton('AC')}
         {renderButton('+/-')}
@@ -39,8 +39,10 @@ const ButtonPanel = ({ clickHandler }) => {
   );
 };
 
+/* eslint-disable */
 ButtonPanel.propTypes = {
-  clickHandler: PropTypes.func.isRequired,
+  clickHandler: PropTypes.func,
 };
+/* eslint-enable */
 
 export default ButtonPanel;
