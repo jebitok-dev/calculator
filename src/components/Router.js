@@ -1,9 +1,9 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './homepage';
-import Calculator from './calculator';
-import Navbar from './navbar';
-import Quote from './quote';
-import Error from './error';
+import Home from './Homepage';
+import Calculator from './Calculator';
+import Navbar from './Navbar';
+import Quote from './Quote';
+import Error from './Error';
 
 const Router = () => (
   <BrowserRouter>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './buttons';
+import Button from './Buttons';
 
 const ButtonPanel = ({ clickHandler }) => {
   const renderButton = (i) => <Button name={i} handleClick={clickHandler} />;

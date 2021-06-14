@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ButtonPanel from '../../components/buttonPanel';
+import ButtonPanel from '../../components/ButtonPanel';
 import '@testing-library/jest-dom';
 
 test('should render button panel', () => {

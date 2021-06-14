@@ -1,4 +1,4 @@
-import calculate from '../../logic/calculate';
+import calculate from '../../logic/Calculate';
 
 test('should clear display screen when "AC" is pressed', () => {
   const data = {

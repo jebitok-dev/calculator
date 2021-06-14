@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import Button from '../../components/buttons';
+import Button from '../../components/Buttons';
 
 it('renders button correctly', () => {
   render(<Button name="3" />);

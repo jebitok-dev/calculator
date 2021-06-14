@@ -1,4 +1,4 @@
-import operate from './operate';
+import operate from './Operate';
 
 function calculate(calculatorDataObj, buttonName) {
   let { total, next, operation } = calculatorDataObj;
