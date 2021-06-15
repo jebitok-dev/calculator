@@ -24,6 +24,13 @@ test('should show buttonName of given operations', () => {
   expect(newData.next).toEqual('');
 });
 
+test('should show minus number when "-" is pressed', () => {
+  const data = { total: 13, next: '', operation: '-' };
+  const newData = calculate(data, '-');
+  expect(newData.operation).toEqual('-');
+  expect(newData.next).toEqual('');
+});
+
 test('should show minus or plus number when "+/-" is pressed', () => {
   const data = { total: 8, next: '', operation: 'x' };
   const newData = calculate(data, '+/-');
@@ -48,4 +55,10 @@ test('should show next if there is operation', () => {
   const data = { total: 13, next: 8, operation: '/' };
   const newData = calculate(data, '/');
   expect(newData.next).toEqual(8);
+});
+
+test('should show percentage if there is operation', () => {
+  const data = { total: 100, next: 10, operation: '%' };
+  const newData = calculate(data, '%');
+  expect(newData.next).toEqual(10);
 });
