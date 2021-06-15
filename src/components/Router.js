@@ -3,7 +3,6 @@ import Home from './Homepage';
 import Calculator from './Calculator';
 import Navbar from './Navbar';
 import Quote from './Quote';
-import Error from './Error';
 
 const Router = () => (
   <BrowserRouter>
