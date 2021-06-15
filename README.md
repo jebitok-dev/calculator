@@ -7,7 +7,7 @@ Building a calculator to ease calculations for Math-Magicians a fictional compan
 
 - React
 - Big.js
-- Jest for testing
+- Jest & React-Test-Library for testing
 
 ## Getting Started
 
@@ -28,8 +28,8 @@ To get this project up and running locally, you must already have npm and nodejs
 - [Live Version](https://calculator-math-magicians.netlify.app/)
 
 ### Run Tests
-<!-- Tests for modules written using **Jest**
-- ``$ npm run test`` or ``$ yarn test`` or ``$ npx jest --coverage`` -->
+Tests for modules written using **Jest** and **React Testing Library**
+- ``$ npm run test`` or ``$ yarn test`` or ``$ npx jest --coverage``
 
 ## Author
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Display from './display';
-import ButtonPanel from './buttonPanel';
-import calculate from '../logic/calculate';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
+import calculate from '../logic/Calculate';
+import '../styles/styles.css';
 
 const App = () => {
   const [total, setTotal] = useState('');
@@ -17,10 +18,10 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="is-flex calculator">
       <Display next={next} total={total} operation={operation} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </div>
   );
 };
 
